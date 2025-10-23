@@ -26,5 +26,5 @@ jobs:
       - name: Deploy files
         run: |
           oc project santiago-parraga-dev
-          oc apply -f ocsecurity.yaml
+          oc apply -f /security/ocsecurity.yaml
           oc rollout status deployment/mi-deployment
